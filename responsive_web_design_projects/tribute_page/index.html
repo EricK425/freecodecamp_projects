@@ -4,17 +4,47 @@
     <meta charset="utf-8">
     <title>Navy Seals</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jscript.js"></script>
+    <script src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="main">
-      <h1 id="title">Navy Seals</h1>
       <div id="img-div">
+        <h1 id="title">Navy Seals</h1>
+
         <!--img must be centered and be responsive-->
         <img id="image" src="https://www.history.com/.image/t_share/MTU3ODc4NjAzNzg5NDQ0NDI1/list-seal-missions-navy-seal-photos-beach-assualt-1708498496-o-3.jpg" alt="">
-        <p id="img-caption">Seals training on the beach.</p>
+        <p id="img-caption">SEALs training on the beach, this is just one aspect of the intense training SEALs undergo.</p>
       </div>
       <div id="tribute-info">
-        <a id="tribute-link" href="#" target="_blank"></a>
+        <div id="history">
+
+          <h2 class="history-heading">History</h2>
+
+          <p class="info-text">The Navy SEALs were originally formed during WWII when the US Navy realized a demand for special reconnasisance of landing beaches and coastal defenses. Originally known as the Scouts and Raiders, these highly trained forces conducted specialized missions aimed at maintaining beach positions or guiding beach assaults.</p>
+          <p class="info-text">Modern day SEALs undergo rigorous training that tests their brute strength along with their mental fortitude. The approximate time for a Navy SEAL to receive adequate training is one year. This training proves invaluable as SEALs carry out some of the most advanced missions to date.</p>
+        </div>
+
+        <div id="seal-operations">
+
+          <h3 class="sub-heading">Several Notable SEAL Operations</h3>
+          <ul id="seal-list">
+            <li>1944 - D-Day</li>
+            <li>1945 - Invasion of Okinawa</li>
+            <li>1983 - Invasion of Grenada</li>
+            <li>1989 - Capture of Noriega</li>
+            <li>2005 - Operation Red Wings</li>
+            <li>2011 - Killing of Osama bin Laden</li>
+          </ul>
+       </div>
+
+       <div id="further-reading">
+
+          <h3 class="sub-heading">Further Reading</h3>
+          <p class="info-text">I encourage you to read more about the SEALs are their remarkable impact for protecting the United States through covert missions. You can find more info at the <a id="tribute-link" href="https://en.wikipedia.org/wiki/United_States_Navy_SEALs" target="_blank">SEALs Wikipedia page</a> or directly from the <a id="seal-link" href="https://www.navy.com/careers/navy-seal" target="_blank">Navy SEALs website</a>.</p>
+       </div>
       </div>
     </div>
   </body>

@@ -1,22 +1,135 @@
+* {
+  /* border: solid 2px blue; */
+  /* margin: 0;
+  padding: 0; */
+  /* box-sizing: border-box; */
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  background: -webkit-linear-gradient(top, white 0%, #78866B 15%, #69775C 67%, #78866B 100%);
+}
+
 body {
-  background-color: #355e3b;
   font-family: Helvetica;
+  margin: 0;
+  padding: 0;
 }
 
 #title {
   color: white;
   text-align: center;
+  text-shadow: 1px 1px 2px darkgrey;
   font-size: 48px;
+  filter: drop-shadow(2px 2px #333);
+}
+
+#image-div {
+  box-shadow: 10px 10px black;
+
+}
+
+#main {
+
 }
 
 #image {
-  max-width: 100%;
+  max-width: 90%;
   margin: 0 auto;
   border-radius: 10px;
   display: block;
+  box-shadow: 4px 4px black;
+
 }
 
 #img-caption {
   color: white;
   text-align: center;
+  max-width: 90%;
+  margin: 10px auto;
+}
+
+#tribute-info {
+  /* background: -webkit-linear-gradient(top, #78866B 15%, #69775C 100%); */
+}
+
+/* SASS -use mixin since headings use same props */
+.history-heading {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  margin-top: 26px;
+  font-size: 29px;
+}
+
+.info-text {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
+  max-width: 90%;
+  margin: 15px auto;
+  text-align: justify;
+}
+
+.sub-heading {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
+  margin-top: 26px;
+  font-size: 23px;
+}
+
+#seal-list {
+  color: white;
+  text-align: left;
+  margin: 0 auto;
+  list-style-position: inside;
+  list-style-type: none;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px black;
+  /* border: solid blue 2px; */
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: #355E3B;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+#tribute-link:hover {
+  color: white;
+  text-shadow: 1px 1px black;
+
+}
+#seal-link {
+  text-decoration: none;
+  color: #355E3B;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
+
+#seal-link:hover {
+  color: white;
+  text-shadow: 1px 1px black;
+
+}
+
+#seal-list li {
+  margin-top: 3px;
+}
+
+@media only screen and (min-width: 992px) {
+  #main {
+    display: grid;
+  }
+  #tribute-info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  #seal-list {
+    margin-left: none;
+    padding-left: none;
+  }
 }
