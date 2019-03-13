@@ -121,7 +121,7 @@ html {
 }
 
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   #grid-columns {
     display: grid;
     grid-template-columns: 55% 45%;
@@ -131,5 +131,30 @@ html {
   #further-reading p {
     line-height: 1.2;
   }
-  
+
+}
+
+@media only screen and (min-width: 1200px) {
+  #tribute-info {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  #history p {
+    line-height: 1.6;
+    font-size: 22px;
+  }
+  #seal-operations li {
+    line-height: 1.2;
+    font-size: 22px;
+  }
+  #further-reading p {
+    line-height: 1.2;
+    font-size: 22px;
+  }
+  .history-heading,
+  .sub-heading {
+    font-size: 24px;
+  }
 }
