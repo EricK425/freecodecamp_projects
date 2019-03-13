@@ -1,0 +1,176 @@
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+#description {
+  padding-top: 1em;
+  font-size: 22px;
+}
+
+#form-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+#survey-div {
+  background: #c0c0c0;
+  width: 58%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+#left {
+  text-align: right;
+}
+
+#name-label {
+  margin-top: 0;
+}
+label {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+select {
+  height: 30px;
+  display: inline-block;
+  width: 15%;
+  margin-left: 7px;
+}
+
+.genres {
+  margin-top: 1em;
+}
+
+
+
+input {
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+  height: 19px;
+  vertical-align: middle;
+  border-radius: 4%;
+  padding: 4px;
+  margin-left: 6px;
+}
+
+input[name="email"],
+input[name="age"],
+select {
+  margin-top: 13px;
+}
+
+input[name="age"] {
+  margin-bottom: 10px;
+}
+
+
+
+li  {
+  list-style-type: none;
+  margin-left: -39px;
+}
+
+input[type="checkbox"] {
+  margin-right: 3px;
+}
+
+input[name="age"] {
+  width: 50px;
+}
+
+.instruments-question {
+  margin-bottom: 3.5em;
+}
+
+
+#submit {
+  margin: 0 auto;
+  display: block;
+  padding: 10px;
+  width: 240px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  margin-top: 3em;
+}
+
+#text-box-label {
+  margin-top: 4.2em;
+  margin-right: 0.6em;
+}
+
+textarea {
+  margin-left: 2px;
+  font-size: 16px;
+}
+
+#submit:hover {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 1216px) {
+  label {
+    font-size: 17px;
+  }
+  input[name="age"] {
+    margin-bottom: 18px;
+  }
+  input {
+    height: 12px;
+  }
+  .instruments {
+    margin-top: 17px;
+  }
+  .instruments-question {
+    margin-bottom: 3.5em;
+  }
+  #genre-question {
+    margin-bottom: 0.5em;
+  }
+  select {
+    width: 60px;
+    height: 22px;
+  }
+  .genres {
+    margin-top: 1.7em;
+  }
+  #right,
+  #left label,
+  #text-box{
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 1216px) and (max-width:1450px) {
+  #left,
+  #right {
+    font-size: 18px;
+  }
+  .genres {
+    margin-top: 1.5em;
+  }
+  #genre-question {
+    margin-top: 1.6em;
+  }
+  #previous-exp-label {
+    margin-top: 0.5em;
+  }
+  .instruments-question {
+    margin-top: -0.2em;
+  }
+  input {
+    height: 13px;
+  }
+}

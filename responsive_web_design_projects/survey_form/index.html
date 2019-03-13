@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Music Survey</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <h1 id="title">Music Survey</h1>
+  <div id="survey-div">
+
+    <form action="" id="survey-form">
+      <p id="description">Please help us gain a better understanding of musical experiences across the world!</p>
+    <div id="form-div">
+
+      <div id="left">
+        <label id="name-label" for="name">Name:</label>
+        <br>
+        <label id="email-label" for="email">Email:</label>
+        <br>
+        <label id="sex-label" for="sex">Sex:</label>
+        <br>
+        <label id="number-label" for="age">Age:</label>
+        <br>
+        <label id="previous-exp-label" for="previous-exp">Have you ever played a musical instrument before?</label>
+        <br>
+        <label class="instruments-question" for="question-response">If yes, which one? <br>(select all that apply)</label>
+        <br>
+        <label id="genre-question" for="genre-response">Which music genres interest you?<br>(select all that apply)</label>
+        <br>
+        <label id="text-box-label" for="">Please summarize your musical experiences for us</label>
+       </div>
+      <div id="right">
+        <input id="name" type="text" name="name" placeholder="Name" required>
+        <br/>
+        <input id="email" type="email" name="email" placeholder="Email" required>
+        <br>
+        <select name="sex" id="dropdown">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br>
+        <input id="number" type="number" name="age" placeholder="Age" min="5" max="99" required>
+        <br>
+
+        <input id="yes" type="radio" name="previous-exp" value="yes">Yes
+
+
+        <input id="no"  type="radio"  name="previous-exp" value="no">No
+
+        <div class="instruments">
+          <ul>
+            <li><input type="checkbox" id="guitar-choice" value="guitar">Guitar</li>
+            <li><input type="checkbox" id="drums-choice" value="drums">Drums</li>
+            <li><input type="checkbox" id="bass-choice" value="bass">Bass</li>
+            <li><input type="checkbox" id="piano-choice" value="piano">Piano/Keys</li>
+            <li><input type="checkbox" id="other-choice" value="other">Other</li>
+          </ul>
+        </div>
+         <div class="genres">
+          <ul>
+            <li><input type="checkbox" id="" value="guitar">Rock</li>
+            <li><input type="checkbox" id="" value="drums">Country</li>
+            <li><input type="checkbox" id="" value="bass">Metal</li>
+            <li><input type="checkbox" id="" value="piano">Rap</li>
+            <li><input type="checkbox" id="" value="other">Other</li>
+          </ul>
+        </div>
+        <textarea id="text-box" class="input-field" style="height:70px; width:200px;resize:vertical;" name="comment" placeholder="Summarize your musical experiences"></textarea>
+      </div> <!-- right div -->
+
+    </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+
+  </body>
+</html>
