@@ -1,0 +1,22 @@
+body {
+  background-color: #355e3b;
+  font-family: Helvetica;
+}
+
+#title {
+  color: white;
+  text-align: center;
+  font-size: 48px;
+}
+
+#image {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  display: block;
+}
+
+#img-caption {
+  color: white;
+  text-align: center;
+}
