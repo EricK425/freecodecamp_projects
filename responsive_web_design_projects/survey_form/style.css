@@ -1,3 +1,7 @@
+* {
+  border: solid 1px green;
+}
+
 h1, p {
   text-align: center;
 }
@@ -6,56 +10,63 @@ h1 {
   font-size: 36px;
 }
 
-#description {
-  padding-top: 1em;
+#survey-mission {
   font-size: 22px;
 }
 
 #form-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  /* grid-template-columns: 100%; */
   margin: 0 auto;
+  min-width: 60%;
   font-size: 20px;
+
 }
 
 #survey-div {
+  /* display: grid;
+  grid-template-columns: 50% 50%;
+  flex-direction: row; */
+  /* display: flex; */
   background: #c0c0c0;
-  width: 58%;
-  margin: 0 auto;
+  min-width: 41%;
+  margin: 0 15%;
   border-radius: 10px;
   padding-bottom: 10px;
 }
 
-#left {
-  text-align: right;
+.flex-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
+
+.align-left {
+  text-align: left;
+}
+
+
+
+
 
 #name-label {
   margin-top: 0;
 }
-label {
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 20px;
-}
 
 select {
   height: 30px;
-  display: inline-block;
+  display: flex;
   width: 15%;
   margin-left: 7px;
-}
-
-.genres {
-  margin-top: 1em;
 }
 
 
 
 input {
-  margin: 0 auto;
+  margin: 0;
   display: inline-block;
-  text-align: left;
+  /* flex-direction: column; */
   height: 19px;
   vertical-align: middle;
   border-radius: 4%;
@@ -63,21 +74,18 @@ input {
   margin-left: 6px;
 }
 
-input[name="email"],
-input[name="age"],
-select {
-  margin-top: 13px;
-}
-
-input[name="age"] {
-  margin-bottom: 10px;
-}
-
-
-
-li  {
+ul li  {
   list-style-type: none;
-  margin-left: -39px;
+  list-style-position: inside;
+  text-align: left;
+  /* margin-left: -39px; */
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin: 0;
 }
 
 input[type="checkbox"] {
@@ -85,12 +93,13 @@ input[type="checkbox"] {
 }
 
 input[name="age"] {
-  width: 50px;
+  /* width: 50px; */
+  display: flex;
 }
 
-.instruments-question {
+/* .instruments-question {
   margin-bottom: 3.5em;
-}
+} */
 
 
 #submit {
@@ -105,12 +114,13 @@ input[name="age"] {
   margin-top: 3em;
 }
 
-#text-box-label {
-  margin-top: 4.2em;
-  margin-right: 0.6em;
+label {
+  /* display: inline;
+  flex-direction: row; */
 }
 
 textarea {
+  display: flex;
   margin-left: 2px;
   font-size: 16px;
 }
@@ -118,59 +128,4 @@ textarea {
 #submit:hover {
   background-color: white;
   color: black;
-}
-
-@media screen and (max-width: 1216px) {
-  label {
-    font-size: 17px;
-  }
-  input[name="age"] {
-    margin-bottom: 18px;
-  }
-  input {
-    height: 12px;
-  }
-  .instruments {
-    margin-top: 17px;
-  }
-  .instruments-question {
-    margin-bottom: 3.5em;
-  }
-  #genre-question {
-    margin-bottom: 0.5em;
-  }
-  select {
-    width: 60px;
-    height: 22px;
-  }
-  .genres {
-    margin-top: 1.7em;
-  }
-  #right,
-  #left label,
-  #text-box{
-    font-size: 13px;
-  }
-}
-
-@media screen and (min-width: 1216px) and (max-width:1450px) {
-  #left,
-  #right {
-    font-size: 18px;
-  }
-  .genres {
-    margin-top: 1.5em;
-  }
-  #genre-question {
-    margin-top: 1.6em;
-  }
-  #previous-exp-label {
-    margin-top: 0.5em;
-  }
-  .instruments-question {
-    margin-top: -0.2em;
-  }
-  input {
-    height: 13px;
-  }
 }
