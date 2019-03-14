@@ -12,134 +12,127 @@
 
     <form action="" id="survey-form">
       <h2 id="survey-mission">Please help us gain a better understanding of musical experiences across the world!</h2>
-    <div id="form-div">
 
-      <!-- <div id="left"> -->
-        <div class="flex-field">
-          <div class="flex-left">
-            <label id="name-label" for="name">Name:</label>
-          </div>
-
-          <div class="flex-right">
-            <input id="name" type="text" name="name" placeholder="Name" required>
-          </div>
-
+      <div class="flex-field">
+        <div class="flex-left">
+          <label id="name-label" for="name">Name:</label>
         </div>
 
-        <div class="flex-field">
-          <div class="flex-left">
-
-            <label id="email-label" for="email">Email:</label>
-          </div>
-
-          <div class="flex-right">
-
-            <input id="email" type="email" name="email"
-            placeholder="Email" required>
-          </div>
-
+        <div class="flex-right">
+          <input id="name" type="text" name="name" placeholder="Name" required>
         </div>
 
+      </div>
 
+      <div class="flex-field">
+        <div class="flex-left">
 
-        <div class="flex-field">
-          <div class="flex-left">
-
-            <label id="number-label" for="age">Age:</label>
-          </div>
-          <div class="flex-right">
-
-            <input id="number" type="number" name="age" placeholder="Age" min="5" max="99" required>
-          </div>
+          <label id="email-label" for="email">Email:</label>
         </div>
 
-        <div class="flex-field">
-          <div class="flex-left">
+        <div class="flex-right">
 
-            <label id="sex-label" for="sex">Sex:</label>
-          </div>
-          <div class="flex-right">
-
-            <select name="sex" id="dropdown">
-
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            </select>
-          </div>
-
+          <input id="email" type="email" name="email"
+          placeholder="Email" required>
         </div>
 
+      </div>
 
-        <div class="flex-field">
-          <div class="flex-left">
 
-          <label id="previous-exp-label" for="previous-exp">Have you ever played a musical instrument before?</label>
-          </div>
-          <div class="flex-right">
 
-            <input id="yes" type="radio" name="previous-exp" value="yes">Yes
+      <div class="flex-field">
+        <div class="flex-left">
 
-            <input id="no"  type="radio"  name="previous-exp" value="no">No
-          </div>
+          <label id="number-label" for="age">Age:</label>
+        </div>
+        <div class="flex-right">
 
+          <input id="number" type="number" name="age" placeholder="Age" min="5" max="99" required>
+        </div>
+      </div>
+
+      <div class="flex-field">
+        <div class="flex-left">
+
+          <label id="sex-label" for="sex">Sex:</label>
+        </div>
+        <div class="flex-right">
+
+          <select name="sex" id="dropdown">
+
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          </select>
         </div>
 
-        <div class="flex-field">
-          <div class="flex-left">
+      </div>
 
 
-            <label class="instruments-question" for="question-response">If yes, which one(s)?</label>
+      <div class="flex-field">
+        <div class="flex-left">
 
-          </div>
-          <div class="flex-right">
+        <label id="previous-exp-label" for="previous-exp">Have you ever played a musical instrument before?</label>
+        </div>
+        <div class="flex-right buttons">
 
-            <ul>
-              <li><input type="checkbox" id="guitar-choice" value="guitar">Guitar</li>
-              <li><input type="checkbox" id="drums-choice" value="drums">Drums</li>
-              <li><input type="checkbox" id="bass-choice" value="bass">Bass</li>
-              <li><input type="checkbox" id="piano-choice" value="piano">Piano</li>
-              <li><input type="checkbox" id="other-choice" value="other">Other</li>
-            </ul>
-          </div>
+          <input id="yes" type="radio" name="previous-exp" value="yes">Yes
 
+          <input id="no"  type="radio"  name="previous-exp" value="no">No
         </div>
 
+      </div>
 
-        <div class="flex-field">
-          <div class="flex-left">
+      <div class="flex-field">
+        <div class="flex-left">
 
-            <label id="genre-question" for="genre-response">Which music genres interest you?</label>
-          </div>
-          <div class="flex-right">
 
-            <ul>
-              <li><input type="checkbox" id="" value="guitar">Rock</li>
-              <li><input type="checkbox" id="" value="drums">Country</li>
-              <li><input type="checkbox" id="" value="bass">Metal</li>
-              <li><input type="checkbox" id="" value="piano">Rap</li>
-              <li><input type="checkbox" id="" value="other">Other</li>
-            </ul>
-          </div>
-
+          <label class="instruments-question" for="question-response">If yes, which one(s)?</label>
 
         </div>
+        <div class="flex-right">
 
-        <div class="flex-field">
-          <div class="flex-left">
+          <ul>
+            <li><input type="checkbox" id="guitar-choice" value="guitar">Guitar</li>
+            <li><input type="checkbox" id="drums-choice" value="drums">Drums</li>
+            <li><input type="checkbox" id="bass-choice" value="bass">Bass</li>
+            <li><input type="checkbox" id="piano-choice" value="piano">Piano</li>
+            <li><input type="checkbox" id="other-choice" value="other">Other</li>
+          </ul>
+        </div>
 
-            <label id="text-box-label" for="">Please summarize your musical experiences for us</label>
-          </div>
-          <div class="flex-right">
+      </div>
 
-            <textarea id="text-box" class="input-field" style="height:70px; width:200px;resize:vertical;" name="comment" placeholder="Summarize your musical experiences"></textarea>
-          </div>
+
+      <div class="flex-field">
+        <div class="flex-left">
+
+          <label id="genre-question" for="genre-response">Which music genres interest you?</label>
+        </div>
+        <div class="flex-right">
+
+          <ul>
+            <li><input type="checkbox" id="" value="guitar">Rock</li>
+            <li><input type="checkbox" id="" value="drums">Country</li>
+            <li><input type="checkbox" id="" value="bass">Metal</li>
+            <li><input type="checkbox" id="" value="piano">Rap</li>
+            <li><input type="checkbox" id="" value="other">Other</li>
+          </ul>
         </div>
 
 
-      <!-- </div> left -->
+      </div>
 
+      <div class="flex-field">
+        <div class="flex-left">
 
-    </div>
+          <label id="text-box-label" for="">Please summarize your musical experiences for us</label>
+        </div>
+        <div class="flex-right">
+
+          <textarea id="text-box" class="input-field" style="height:70px; width:200px;resize:vertical;" name="comment" placeholder="Summarize your musical experiences"></textarea>
+        </div>
+      </div>
+
       <button id="submit" type="submit">Submit</button>
     </form>
   </div>
