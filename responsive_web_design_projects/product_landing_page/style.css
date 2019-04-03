@@ -76,10 +76,12 @@ header {
 
 #product-desc p {
   margin: 8px 8px 10px 8px;
-  
+
 }
 
-
+#vidform {
+  text-align: center;
+}
 
 
 @media (min-width: 1400px) {
