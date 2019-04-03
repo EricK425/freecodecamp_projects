@@ -2,7 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Helvetica;
 }
+
+.main-text {
+  color: black;
+  text-shadow: 1px 1px white;
+}
+
 
 nav a {
   text-decoration: none;
@@ -16,18 +23,15 @@ nav a {
 }
 
 nav a:hover {
-  color: lime;
+  color: black;
   background: white;
+  border: solid 2px black;
 }
 
 .heading {
   font-size: 48px;
 }
 
-.main-text {
-  color: black;
-  text-shadow: 1px 1px white;
-}
 
 #product {
   background: gray;
@@ -42,6 +46,18 @@ nav a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+}
+
+#testimony {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 21px;
+  font-family: Helvetica;
+}
+
+.quoted {
+  font-size: 26px;
+  font-style: italic;
 }
 
 
