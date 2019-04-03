@@ -18,3 +18,43 @@
   background-size: cover;
   min-height: 100vh;
 }
+
+@media (max-width: 1100px) {
+  #product {
+    min-height: 740px;
+  }
+  #product h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 730px) {
+  #product {
+    min-height: 500px;
+  }
+  #product h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 600px) {
+  #product {
+    min-height: 420px;
+  }
+  #product h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 599px) {
+  #product {
+    min-height: 200px;
+    background-size: contain;
+  }
+  #product h1 {
+    font-size: 36px;
+  }
+}
+
+/* @media (max-width: 800px) {
+  footer {
+    padding: 80px 15px;
+  }
+} */
