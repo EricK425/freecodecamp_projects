@@ -11,6 +11,14 @@ header {
   width: 100%;
 }
 
+span {
+  font-size: 1.6em;
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  color: cyan;
+}
+
 .main-text {
   color: black;
   text-shadow: 1px 1px white;
@@ -134,6 +142,7 @@ iframe {
   }
   iframe {
     width: 80%;
+    height: 800px;
   }
 }
 @media (max-width: 780px) {
