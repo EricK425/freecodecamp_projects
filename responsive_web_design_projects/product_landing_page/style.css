@@ -16,7 +16,7 @@ span {
   display: block;
   text-align: center;
   margin-top: 14px;
-  color: cyan;
+  color: darkblue;
 }
 
 .main-text {
@@ -27,11 +27,11 @@ span {
 
 #nav-bar a {
   text-decoration: none;
-  background: gray;
+  background: black;
   font-size: 23px;
-  padding: 14px 14px 1px 14px;
+  padding: 14px 14px 14px 14px;
   color: white;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px gray;
 
 }
 
