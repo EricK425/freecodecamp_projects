@@ -80,7 +80,15 @@ header {
 }
 
 #vidform {
+  margin-top: 90px;
   text-align: center;
+  background-color: gray;
+  padding: 25px 0px 25px 0px;
+}
+
+#form input {
+  margin-top: 14px;
+  font-size: 20px;
 }
 
 
