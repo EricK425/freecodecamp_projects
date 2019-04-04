@@ -9,6 +9,8 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 0px 14px 0px 14px;
+  background-color: black;
 }
 
 span {
@@ -24,12 +26,15 @@ span {
   text-shadow: 1px 1px white;
 }
 
+#nav-bar {
+  height: 55px;
+}
 
 #nav-bar a {
   text-decoration: none;
   background: black;
   font-size: 23px;
-  padding: 14px 14px 14px 14px;
+  padding: 14px 18px 14px 18px;
   color: white;
   text-shadow: 1px 1px gray;
 
@@ -49,7 +54,7 @@ span {
   background: gray;
   color: red;
   border-top: solid 4px black;
-  margin-top: 60px;
+  margin-top: 70px;
 
   display: flex;
   flex-direction: column;
@@ -75,7 +80,7 @@ span {
 }
 
 #product-desc {
-  margin-top: 35px;
+  margin: 35px 20px;
   display: flex;
   justify-content: space-between;
   text-align: justify;
@@ -98,19 +103,44 @@ iframe {
   margin-top: 90px;
   text-align: center;
   background-color: gray;
-  padding: 40px 0px 25px 0px;
+  padding: 50px 0px 25px 0px;
 }
 
 #newsletter {
-  font-size: 24px;
+  font-size: 32px;
   color: yellow;
   text-shadow: 2px 2px black;
-  margin-top: 9px;
+  margin-top: 19px;
 }
 
 #form input {
   margin-top: 14px;
   font-size: 20px;
+}
+
+#email {
+  border-radius: 6px;
+  padding: 6px;
+
+}
+
+input[type=submit] {
+  background-color: lightblue;
+  border-color: lightblue;
+  border-radius: 6px;
+  padding: 8px;
+  margin-left: 8px;
+  border-width: 0px;
+}
+
+.fa-envelope-open-text {
+  color: yellow;
+  text-shadow: 1px 1px black;
+}
+
+footer {
+  margin-top: 10px;
+  padding: 10px;
 }
 
 
