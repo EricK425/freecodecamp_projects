@@ -81,7 +81,9 @@ span {
   /* justify-content: center; */
   background-image: url(img/whistle.png);
   background-repeat: no-repeat;
-  background-position-y: 80%;
+  background-position-y: 60%;
+  background-position-x: 40%;
+
   background-size: cover;
   min-height: 100vh;
 }
@@ -215,6 +217,11 @@ address {
 @media (max-width: 780px) {
   #product {
     min-height: 500px;
+    background-size: cover;
+    background-position-y: 60%;
+    background-position-x: 40%;
+
+
   }
   #product h1 {
     font-size: 48px;
