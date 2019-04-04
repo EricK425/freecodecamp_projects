@@ -110,7 +110,7 @@ span {
 
 #product-desc p {
   margin: 8px 8px 10px 8px;
-
+  font-size: 22px;
 }
 
 #vid-heading {
@@ -187,12 +187,12 @@ footer {
   align-items: center;
 }
 
-.social i {
+#social i {
   margin: 0px 5px;
   color: #758475;
 }
 
-.social i:hover {
+#social i:hover {
   color: cyan;
 }
 
