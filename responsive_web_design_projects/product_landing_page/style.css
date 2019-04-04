@@ -215,6 +215,7 @@ address {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin: inherit auto;
   }
 
   /* #product h1 {
