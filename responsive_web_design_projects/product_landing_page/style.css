@@ -123,7 +123,7 @@ span {
 .video-point {
   color: white;
   font-size: 30px;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 iframe {
@@ -141,7 +141,7 @@ iframe {
   font-size: 32px;
   color: yellow;
   text-shadow: 2px 2px black;
-  margin-top: 19px;
+  margin-top: 21px;
 }
 
 #form input {
@@ -178,12 +178,31 @@ input[type=submit]:hover {
 }
 
 footer {
-  margin-top: 10px;
   padding: 10px;
-  font-family: 'Archivo', Helvetica;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social i {
+  margin: 0px 5px;
+  color: #758475;
+}
+
+.social i:hover {
+  color: cyan;
+}
+
+footer span {
+  display: inline-block;
 }
 
 address {
+  font-family: 'Archivo', Helvetica;
+
 }
 
 
@@ -192,6 +211,12 @@ address {
     min-height: 1300px;
     background-size: cover;
   }
+  #product-desc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
   /* #product h1 {
     font-size: 54px;
     margin-top: 10px;
