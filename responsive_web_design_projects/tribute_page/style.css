@@ -21,22 +21,12 @@ html {
   filter: drop-shadow(2px 2px #333);
 }
 
-#image-div {
-  box-shadow: 10px 10px black;
-
-}
-
-#main {
-
-}
-
 #image {
   max-width: 90%;
   margin: 0 auto;
   border-radius: 10px;
   display: block;
   box-shadow: 4px 4px black;
-
 }
 
 #img-caption {
@@ -45,11 +35,6 @@ html {
   max-width: 90%;
   margin: 10px auto;
   text-shadow: 1px 1px 2px black;
-
-}
-
-#tribute-info {
-  /* background: -webkit-linear-gradient(top, #78866B 15%, #69775C 100%); */
 }
 
 /* SASS -use mixin since headings use same props */
@@ -88,7 +73,9 @@ html {
   text-shadow: 1px 1px 2px black;
 }
 
-
+#tribute-info {
+  margin: 0 auto;
+}
 
 #tribute-link {
   text-decoration: none;
@@ -121,25 +108,33 @@ html {
 }
 
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  #grid-columns {
+@media only screen and (min-width: 992px) {
+  /* #grid-columns {
     display: grid;
     grid-template-columns: 55% 45%;
     max-width: 90%;
     margin: 0 auto;
+  } */
+  #tribute-info {
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+  #history {
   }
   #further-reading p {
     line-height: 1.2;
+  }
+  #history p {
+    line-height: 1.6;
+    font-size: 22px;
   }
 
 }
 
 @media only screen and (min-width: 1200px) {
   #tribute-info {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    max-width: 90%;
-    margin: 0 auto;
+    max-width: 75%;
   }
   #history p {
     line-height: 1.6;
